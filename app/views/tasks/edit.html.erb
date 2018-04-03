@@ -1,0 +1,13 @@
+<h1>Edit Task</h1>
+
+<%= form_for(@task) do |f| %>
+  <input type="checkbox" value="compeleted" checked>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.submit value="Update a Task"%>
+  <!-- This table is for every html -->
+<% end %>
+

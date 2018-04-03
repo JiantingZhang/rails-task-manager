@@ -1,0 +1,17 @@
+<h1>Add Task</h1>
+
+<!-- This line is only for new page -->
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.submit %>
+  <!-- This table is for every html -->
+<% end %>
+
+<%= link_to "edit a task", task_edit_path %>
+
+
